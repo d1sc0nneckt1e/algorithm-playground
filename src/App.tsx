@@ -1,5 +1,7 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { IonApp } from "@ionic/react";
+
+import MainOverview from './components/MainOverview'
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -23,7 +25,7 @@ import "./theme/variables.css";
 const App: React.FC = () => {
   return (
     <IonApp>
-      <h2>componnts in here!</h2>
+      <MainOverview />
     </IonApp>
   );
 };
