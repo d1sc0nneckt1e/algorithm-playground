@@ -1,0 +1,8 @@
+{
+  "appId": "com.bmiCalculator.com",
+  "appName": "bmiCalculator",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}
