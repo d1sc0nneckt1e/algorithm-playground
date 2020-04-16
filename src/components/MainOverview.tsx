@@ -14,13 +14,11 @@ const MainOverview: React.FC = () => {
   return (
     <IonContent>
       <IonGrid>
-        {Object.keys(data.algorithms.name).map((key, i) => (
+        {data.algorithms.map((algo, i) => (
           <IonRow key={i}>
             <IonCol>
               <IonCard>
-                <IonCardHeader>
-                  {data.algorithms.name.mergesort.title}
-                </IonCardHeader>
+                <IonCardHeader>{algo.title}</IonCardHeader>
               </IonCard>
             </IonCol>
           </IonRow>

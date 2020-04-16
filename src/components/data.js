@@ -1,17 +1,15 @@
 var data = {
-	algorithms: {
-		name: {
-			mergesort: {
-				title: "Mergesort"
-			},
-			quicksort: {
-				title: "Quicksort"
-			},
-			bubblesort: {
-				title: "Bubblesort"
-			}
-		}
-	}
+	algorithms: [
+        {
+            title: "Mergesort"
+        },
+        {
+            title: "Quicksort"
+        },
+        {
+            title: "Bubblesort"
+        }
+    ]
 }
 
 export default data;
