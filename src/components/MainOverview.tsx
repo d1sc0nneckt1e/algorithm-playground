@@ -11,13 +11,10 @@ import {
 } from "@ionic/react";
 
 import data from "./data";
-import { SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION } from "constants";
 
 const MainOverview: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-  const modalStyling = {
-    color: "white",
-  };
+
   return (
     <IonContent>
       <IonGrid>
@@ -30,19 +27,16 @@ const MainOverview: React.FC = () => {
             </IonCol>
           </IonRow>
         ))}
-        {data.algorithms.map((algo, i) => (
-          <IonRow key={i}>
-            <IonCol>
-              <IonModal isOpen={showModal}>
-                <p style={modalStyling}>{algo.title}</p>
-                <IonButton onClick={() => setShowModal(false)}>
-                  Close Modal
-                </IonButton>
-              </IonModal>
-							<IonButton onClick={() => setShowModal(true)}>Show Modal</IonButton>
-            </IonCol>
-          </IonRow>
-        ))}
+        <IonRow>
+          <IonCol>
+            <IonModal isOpen={showModal}>
+              <IonButton onClick={() => setShowModal(false)}>
+                Close Modal
+              </IonButton>
+            </IonModal>
+            <IonButton onClick={() => setShowModal(true)}>Show Modal</IonButton>
+          </IonCol>
+        </IonRow>
       </IonGrid>
     </IonContent>
   );
