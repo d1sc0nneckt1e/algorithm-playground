@@ -1,6 +1,6 @@
 {
-  "appId": "com.bmiCalculator.com",
-  "appName": "bmiCalculator",
+  "appId": "com.algorithm-playground.com",
+  "appName": "Algorithm Playground",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
